@@ -1,3 +1,3 @@
 FROM balenalib/raspberry-pi-debian:latest
 
-RUN uname -a
+RUN apt-get update
