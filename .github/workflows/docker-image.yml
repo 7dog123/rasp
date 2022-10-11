@@ -21,7 +21,7 @@ jobs:
        sudo apt-get install -y qemu qemu-user-static
        docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 
-    - run: sudo ls /var/lib/docker
+    - run: sudo ls /var/lib/docker/*
 
     - name: Build the Docker image
       run: docker build . --file Dockerfile
